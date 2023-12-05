@@ -1,0 +1,52 @@
+package com.cabmanagementsystem.dto;
+
+public class DriverDTO extends UserDTO{
+
+	private String driverName;
+	private String licenseNo;
+	private boolean driverAvailability;
+	
+	public DriverDTO() {
+		super();
+	}
+	public DriverDTO(int userId, String userName, String password, String address, String mobileNumber, String email,
+			String roles, String driverName, String licenseNo, boolean driverAvailability) {
+		super(userId, userName, password, address, mobileNumber, email, roles);
+		this.driverName = driverName;
+		this.licenseNo = licenseNo;
+		this.driverAvailability = driverAvailability;
+	}
+
+
+	public String getDriverName() {
+		return driverName;
+	}
+
+
+	public void setDriverName(String driverName) {
+		this.driverName = driverName;
+	}
+
+
+	public String getLicenseNo() {
+		return licenseNo;
+	}
+
+
+	public void setLicenseNo(String licenseNo) {
+		this.licenseNo = licenseNo;
+	}
+
+
+	public boolean isDriverAvailability() {
+		return driverAvailability;
+	}
+
+
+	public void setDriverAvailability(boolean driverAvailability) {
+		this.driverAvailability = driverAvailability;
+	}
+	
+	
+	
+}
